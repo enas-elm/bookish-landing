@@ -1,14 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navbar';
-import './index.css';
+import './App.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import './index.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex flex-col min-h-screen">
       <header className="header">
         <Navbar />
       </header>
+
+      <main className="flex-grow">
+        <div className="container mx-auto p-4">
+          
+        </div>
+      </main>
+
+      <footer className="footer">
+        <Footer />
+      </footer>
     </div>
   );
 }
