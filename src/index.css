@@ -16,3 +16,28 @@ code {
     monospace;
 }
 
+@layer base {
+  @font-face {
+      font-family: 'DM Sans Italic';
+      src: url('../public/font/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+      font-weight: 100 900;
+       font-style: italic;
+  }
+  @font-face {
+        font-family: "Passion One";
+        src: url('../public/font/PassionOne-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+            font-family: "DM Display";
+            src: url('../public/font/DMSerifDisplay-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    @font-face {
+                font-family: "Inter";
+                src: url('../public/font/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+                font-weight: 700;
+            }
+}
