@@ -6,6 +6,7 @@ module.exports = {
       green: "#2D4D43",
       greenlight: "#8EBDAF",
       white: "#FAFAFA",
+      "gris-opacity": "#FAF8F799",
       beige: "#D8CCB5",
       black: "#131313",
       gris: "#E4E0DE",
