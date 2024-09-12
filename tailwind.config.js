@@ -20,7 +20,22 @@ module.exports = {
       inter: ["Inter"],
       neuton: ["Neuton"],
     },
-    extend: {},
+    extend: {
+        keyframes: {
+            scrollLeft: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            scrollRight: {
+              '0%': { transform: 'translateX(-50%)' },
+              '100%': { transform: 'translateX(0)' },
+            },
+          },
+          animation: {
+            scrollLeft: 'scrollLeft 15s linear infinite',
+            scrollRight: 'scrollRight 15s linear infinite',
+       },
+    },
   },
   plugins: [],
 };
