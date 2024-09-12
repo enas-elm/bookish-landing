@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import CommunitySection from './components/CommunitySection'
 import './index.css'
 
 function App() {
@@ -11,8 +12,8 @@ function App() {
       </header>
 
       <main className="flex-grow">
-        <div className="container mx-auto p-4">
-          
+        <div>
+          <CommunitySection/>
         </div>
       </main>
 
