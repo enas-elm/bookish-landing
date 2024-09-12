@@ -4,18 +4,29 @@ import { faInstagram, faLinkedin, faFacebook } from '@fortawesome/free-brands-sv
 
 const Footer = () => {
   return (
-    <footer className="bg-green text-white py-8 px-4">
-      <div className="container mx-auto grid grid-cols-3 gap-8 items-center">
-
-        <div className="flex flex-col items-start">
-          <img src="/Vector-jaune.svg" alt="Bookish Logo" className="h-10 mb-4" />
-          <p className="text-3xl font-semibold">Bookish</p>
-          <p className="text-sm mt-2 text-gris-opacity">La librairie des passionnés de lecture</p>
+    <footer className="bg-green text-white py-2 px-4">
+      <div className="container mx-auto flex justify-between items-center px-10">
+        
+        {/* Logo and Text Aligned Vertically */}
+        <div className="flex items-center space-x-4">
+          <img src="/Vector-jaune.svg" alt="Bookish Logo" className="h-10" />
+          <div className="flex flex-col text-left pl-5">
+            <p className="text-4xl font-semibold">Bookish</p>
+            <p className="text-sm text-gris-opacity">La librairie des passionnés de lecture</p>
+          </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        {/* Centered Contact Information */}
+        <div className="text-center pr-20">
+          <p className="text-2xl font-semibold text-left">Contact</p>
+          <a href="mailto:contact@booking.fr" className="text-sm mt-2 text-left text-gris-opacity hover:underline block">contact@booking.fr</a>
+          <p className="text-sm text-left mt-2 text-gris-opacity">+33 633333333</p>
+        </div>
+
+        {/* Right-aligned Follow Us Section */}
+        <div className="text-right">
           <p className="text-2xl font-semibold">Follow us</p>
-          <div className="flex mt-4 space-x-4">
+          <div className="flex mt-4 space-x-4 justify-end">
             <a href="#" className="text-gris-opacity hover:text-white">
               <FontAwesomeIcon icon={faInstagram} size="xl" />
             </a>
@@ -27,15 +38,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        <div className="flex flex-col items-end">
-          <p className="text-2xl font-semibold">Contact</p>
-          <a href="mailto:contact@booking.fr" className="text-sm mt-2 text-gris-opacity hover:underline">contact@booking.fr</a>
-          <p className="text-sm mt-2 text-gris-opacity">+33 633333333</p>
-        </div>
       </div>
 
-      <div className="border-t border-gray-600 mt-8 pt-4 flex justify-between items-center text-sm">
+      <div className="border-t border-gray-400 mt-8 pt-4 flex justify-between items-center text-sm">
         <div className="flex space-x-4">
           <a href="#" className="text-gris-opacity hover:underline">Privacy Policy</a>
           <a href="#" className="text-gris-opacity hover:underline">Cookie Policy</a>

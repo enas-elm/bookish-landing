@@ -18,6 +18,7 @@ module.exports = {
       "passion-one": ["PassionOne-Regular"],
       "dm-display": ["DMSerifDisplay-Regular"],
       inter: ["Inter"],
+      neuton: ["Neuton"],
     },
     extend: {},
   },

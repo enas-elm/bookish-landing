@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 
 const Navbar = () => {
-  const [language, setLanguage] = useState('EN')
+  const [language, setLanguage] = useState('FR')
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const dropdownRef = useRef(null)
 
@@ -27,7 +27,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className="w-full bg-green px-4 py-2 flex justify-between items-center">
+    <nav className="w-full bg-green px-4 py-2 flex justify-between items-center fixed top-0 left-0 z-50">
       <div className="flex-shrink-0">
         <img src="/Vector-jaune.svg" alt="Bookish" className="h-8" />
       </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
           )}
         </div>
 
-        <button className="bg-yellow text-green px-6 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
+        <button className="bg-yellow text-green px-6 py-2 rounded-full hover:bg-[#F6E96B]">
           Devenir testeur
         </button>
       </div>
