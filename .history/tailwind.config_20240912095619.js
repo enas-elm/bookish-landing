@@ -13,21 +13,18 @@ module.exports = {
       yellow: "#FEDF6F",
       noirClair: "#686C74",
     },
-
+    width: {
+      471: "471px",
+      611: "611px",
+    },
+    height: {},
     fontFamily: {
       "dm-sans-italic": ['"DM Sans Italic"', "sans-serif"],
       "passion-one": ["PassionOne-Regular"],
       "dm-display": ["DMSerifDisplay-Regular"],
       inter: ["Inter"],
     },
-    extend: {
-      width: {
-        471: "471px",
-      },
-      height: {
-        611: "600px",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };

@@ -105,7 +105,7 @@ function TimelineMenu() {
             )}
           </div>
         ))}
-        <button className="bg-yellow shadow-lg text-green px-6 py-2 mt-16 rounded-full hover:bg-yellow-500 hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
+        <button className="bg-yellow text-green px-6 py-2 mt-12 rounded-full hover:bg-yellow-500 hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
           Devenir testeur
         </button>
       </div>
@@ -113,7 +113,7 @@ function TimelineMenu() {
       {/* Details Section */}
       <div
         ref={imageRef}
-        className="w-471 h-611 flex  flex-col justify-center items-center p-10 shadow-lg rounded-[43px]"
+        className="w-471 h-611 flex  flex-col justify-center items-center p-10 rounded-[43px]"
         style={{
           backgroundColor: selectedItem ? selectedItem.color : "#ffffff",
         }}

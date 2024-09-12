@@ -13,7 +13,6 @@ module.exports = {
       yellow: "#FEDF6F",
       noirClair: "#686C74",
     },
-
     fontFamily: {
       "dm-sans-italic": ['"DM Sans Italic"', "sans-serif"],
       "passion-one": ["PassionOne-Regular"],
@@ -25,7 +24,7 @@ module.exports = {
         471: "471px",
       },
       height: {
-        611: "600px",
+        611: "611px",
       },
     },
   },

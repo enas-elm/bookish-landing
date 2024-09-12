@@ -43,28 +43,29 @@ const menuItems = [
 function TimelineMenu() {
   const [selectedItem, setSelectedItem] = useState(menuItems[0]);
   const imageRef = useRef(null);
+  const textRef = useRef(null);
 
   const handleClick = (item) => {
-    // Animation de transition de l'image (déplacement de droite à gauche)
+    // Animation de transition de l'image et du texte (déplacement de droite à gauche)
     gsap.fromTo(
-      imageRef.current,
-      { x: 300, opacity: 0 }, // L'image commence à droite et est invisible
-      { x: 0, opacity: 1, duration: 1 } // Elle se déplace à sa position d'origine avec une durée d'une seconde
+      [imageRef.current, textRef.current], // Nous animons à la fois l'image et le texte
+      { x: 300, opacity: 0 }, // Commence à droite et est invisible
+      { x: 0, opacity: 1, duration: 1 } // Se déplace vers sa position d'origine avec une durée d'une seconde
     );
     setSelectedItem(item);
   };
 
   useEffect(() => {
-    // Animation d'entrée initiale lorsque le composant est monté
+    // Animation d'entrée initiale pour le texte et l'image
     gsap.fromTo(
-      imageRef.current,
+      [imageRef.current, textRef.current],
       { x: 300, opacity: 0 },
       { x: 0, opacity: 1, duration: 1 }
     );
   }, []);
 
   return (
-    <div className="p-40 overflow-hidden lg:flex lg:flex-row lg:justify-around lg:items-center">
+    <div className="p-40 lg:flex lg:flex-row lg:justify-around lg:items-center">
       {/* Menu Items */}
       <div className="w-96 h-96 flex flex-col items-start p-4">
         {menuItems.map((item, index) => (
@@ -105,15 +106,11 @@ function TimelineMenu() {
             )}
           </div>
         ))}
-        <button className="bg-yellow shadow-lg text-green px-6 py-2 mt-16 rounded-full hover:bg-yellow-500 hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
-          Devenir testeur
-        </button>
       </div>
 
       {/* Details Section */}
       <div
-        ref={imageRef}
-        className="w-471 h-611 flex  flex-col justify-center items-center p-10 shadow-lg rounded-[43px]"
+        className="w-471 h-611 flex  flex-col justify-center items-center p-10 rounded-[43px]"
         style={{
           backgroundColor: selectedItem ? selectedItem.color : "#ffffff",
         }}
@@ -121,26 +118,5 @@ function TimelineMenu() {
         {selectedItem ? (
           <>
             <p
-              className="text-xl text-left"
-              style={{
-                color: selectedItem ? selectedItem.colorText : "#ffffff",
-              }}
-            >
-              {selectedItem.description}
-            </p>
-            <img
-              // Référence pour l'animation de l'image
-              src={selectedItem.imageUrl}
-              alt={selectedItem.label}
-              className="mt-4"
-            />
-          </>
-        ) : (
-          <p>Bonjour</p>
-        )}
-      </div>
-    </div>
-  );
-}
-
-export default TimelineMenu;
+              ref={textRef} // Référence pour l'animation du texte
+              className

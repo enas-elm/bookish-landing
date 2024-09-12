@@ -113,7 +113,7 @@ function TimelineMenu() {
       {/* Details Section */}
       <div
         ref={imageRef}
-        className="w-471 h-611 flex  flex-col justify-center items-center p-10 shadow-lg rounded-[43px]"
+        className="w-471 h-611 flex  flex-col justify-center items-center p-10 rounded-[43px]"
         style={{
           backgroundColor: selectedItem ? selectedItem.color : "#ffffff",
         }}

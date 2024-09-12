@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import React, { useState } from "react";
 
 const menuItems = [
   {
@@ -9,7 +8,6 @@ const menuItems = [
       "Rejoignez une communauté de passionnés qui partagent votre amour pour les livres. Restez connecté avec vos amis et découvrez leurs nouvelles aventures, tout en partageant les vôtres !",
     color: "#FEDF6F",
     imageUrl: "/decouvrez.svg",
-    colorText: "#1C471F",
   },
   {
     id: 2,
@@ -18,7 +16,6 @@ const menuItems = [
       "Rejoignez des clubs ou partagez des messages avec d'autres fans de livres ou d'autres passionnés.",
     color: "#8EBDAF",
     imageUrl: "/discutez.svg",
-    colorText: "#FFFFFF",
   },
   {
     id: 3,
@@ -27,7 +24,6 @@ const menuItems = [
       "Partagez vos listes de lecture avec une communauté de lecteurs tout aussi curieux que vous. Donnez votre avis sur les livres qui vous ont marqué ou déçu, et inspirez les autres à découvrir de nouvelles histoires.",
     color: "#FEDF6F",
     imageUrl: "/Screenshot-1.png",
-    colorText: "#1C471F",
   },
   {
     id: 4,
@@ -36,35 +32,19 @@ const menuItems = [
       "Organisez vos lectures en créant des listes personnalisées qui vous ressemblent. Rejoignez des clubs de lecture pour échanger et découvrir de nouveaux horizons littéraires avec d'autres passionnés.",
     color: "#55917E",
     imageUrl: "/Screenshot-2.png",
-    colorText: "#FFFFFF",
   },
 ];
 
 function TimelineMenu() {
+  // Initialiser avec le premier élément (DECOUVERT)
   const [selectedItem, setSelectedItem] = useState(menuItems[0]);
-  const imageRef = useRef(null);
 
   const handleClick = (item) => {
-    // Animation de transition de l'image (déplacement de droite à gauche)
-    gsap.fromTo(
-      imageRef.current,
-      { x: 300, opacity: 0 }, // L'image commence à droite et est invisible
-      { x: 0, opacity: 1, duration: 1 } // Elle se déplace à sa position d'origine avec une durée d'une seconde
-    );
     setSelectedItem(item);
   };
 
-  useEffect(() => {
-    // Animation d'entrée initiale lorsque le composant est monté
-    gsap.fromTo(
-      imageRef.current,
-      { x: 300, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1 }
-    );
-  }, []);
-
   return (
-    <div className="p-40 overflow-hidden lg:flex lg:flex-row lg:justify-around lg:items-center">
+    <div className="p-40 lg:flex lg:flex-row lg:justify-around lg:items-center">
       {/* Menu Items */}
       <div className="w-96 h-96 flex flex-col items-start p-4">
         {menuItems.map((item, index) => (
@@ -105,31 +85,24 @@ function TimelineMenu() {
             )}
           </div>
         ))}
-        <button className="bg-yellow shadow-lg text-green px-6 py-2 mt-16 rounded-full hover:bg-yellow-500 hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
-          Devenir testeur
-        </button>
       </div>
 
       {/* Details Section */}
       <div
-        ref={imageRef}
-        className="w-471 h-611 flex  flex-col justify-center items-center p-10 shadow-lg rounded-[43px]"
+        className="w-471 h-611 flex  flex-col justify-center items-center p-7 rounded-[43px]"
         style={{
           backgroundColor: selectedItem ? selectedItem.color : "#ffffff",
         }}
       >
         {selectedItem ? (
           <>
-            <p
-              className="text-xl text-left"
-              style={{
-                color: selectedItem ? selectedItem.colorText : "#ffffff",
+            <p className="text-xl text-left">
+              {selectedItem.description} style=
+              {{
+                C: selectedItem ? selectedItem.color : "#ffffff",
               }}
-            >
-              {selectedItem.description}
             </p>
             <img
-              // Référence pour l'animation de l'image
               src={selectedItem.imageUrl}
               alt={selectedItem.label}
               className="mt-4"

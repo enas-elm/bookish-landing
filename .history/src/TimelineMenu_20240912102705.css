@@ -1,0 +1,33 @@
+.content-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image,
+p {
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.forward .image,
+.forward p {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.backward .image,
+.backward p {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.forward-enter .image,
+.forward-enter p {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.backward-enter .image,
+.backward-enter p {
+  transform: translateX(0);
+  opacity: 1;
+}
