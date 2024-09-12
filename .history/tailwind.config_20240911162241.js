@@ -11,7 +11,7 @@ module.exports = {
       gris: "#E4E0DE",
       "gris-foncé": "#1B1E28",
       yellow: "#FEDF6F",
-      noirClair: "#686C74",
+      noircl
     },
     fontFamily: {
       "dm-sans-italic": ['"DM Sans Italic"', "sans-serif"],

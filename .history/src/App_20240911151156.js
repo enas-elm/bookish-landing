@@ -1,3 +1,4 @@
+import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import "./index.css";
@@ -9,7 +10,7 @@ function App() {
       <header className="header">
         <Navbar />
       </header>
-      <TimeLine />
+      
     </div>
   );
 }

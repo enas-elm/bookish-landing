@@ -1,7 +1,7 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import "./index.css";
-import TimeLine from "./components/TimeLine";
+import logo from './logo.svg';
+import './App.css';
+import Navbar from './components/Navbar';
+import './index.css';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <header className="header">
         <Navbar />
       </header>
-      <TimeLine />
+      TimelineMenu
     </div>
   );
 }
