@@ -8,12 +8,12 @@ const Form = () => {
       <div className='bg-logo py-20 '>
         <div className='flex justify-between gap-16 '>
 
-          <div className=' flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start bg-white hidden lg:flex'>
+          <div className='bg-[#FFF0A3] flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start hidden lg:flex'>
             <h2 className='text-7xl font-dm-display font-semibold text-green'>Participez&nbsp;à <br></br>l'aventure</h2>
             <p>© 2024 All Rights Reserved, Bookish Inc.</p>
           </div>
 
-          <div className='flex flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start bg-white w-full'>
+          <div className='bg-[#FFF0A3] flex flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start w-full'>
 
             <h2 className='text-6xl font-dm-display font-semibold text-green block lg:hidden'>Participez à l'aventure</h2>
             <p>Envie de contribuer à l'évolution de Bookish ? Partagez vos retours en testant l'application.</p>
