@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
 
       <div className="hidden sm:flex items-center gap-5 justify-end space-x-6">
-        <a href="/about" className="hover:underline text-yellow">
+        <a href="#time-line" className="hover:underline text-yellow">
           À propos
         </a>
         <div className="relative" ref={dropdownRef}>

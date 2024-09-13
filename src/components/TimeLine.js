@@ -65,7 +65,7 @@ function TimelineMenu() {
   }, []);
 
   return (
-    <div className="lg:p-40 overflow-hidden p-10  lg:flex lg:flex-row lg:justify-around lg:items-center">
+    <div id="time-line" className="lg:p-40 overflow-hidden p-10  lg:flex lg:flex-row lg:justify-around lg:items-center">
       {/* Menu Items */}
       <div className="w-96 h-96 flex flex-col items-start p-4">
         {menuItems.map((item, index) => (
