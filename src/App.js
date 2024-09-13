@@ -5,6 +5,7 @@ import CommunitySection from './components/CommunitySection'
 import ImageScroll from './components/ImageScroll'
 import './index.css'
 import TimelineMenu from './components/TimeLine'
+import Form from './components/Form'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <CommunitySection />
         <TimelineMenu />
         <ImageScroll />
+        <Form />
       </main>
 
       <footer className="footer z-40">
