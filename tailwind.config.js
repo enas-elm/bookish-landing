@@ -35,6 +35,12 @@ module.exports = {
             scrollLeft: 'scrollLeft 15s linear infinite',
             scrollRight: 'scrollRight 15s linear infinite',
        },
+       width: {
+        471: "471px",
+      },
+      height: {
+        611: "611px",
+      },
     },
   },
   plugins: [],

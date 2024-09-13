@@ -4,6 +4,7 @@ import Footer from './components/Footer'
 import CommunitySection from './components/CommunitySection'
 import ImageScroll from './components/ImageScroll'
 import './index.css'
+import TimelineMenu from './components/TimeLine'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main className="flex-grow">
         <div>
           <CommunitySection/>
+          <TimelineMenu/>
           <ImageScroll/>
         </div>
       </main>
