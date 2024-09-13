@@ -37,6 +37,7 @@ const menuItems = [
     color: "#55917E",
     imageUrl: "/Screenshot-2.png",
     colorText: "#FFFFFF",
+    imageSize: "300px",
   },
 ];
 
@@ -62,9 +63,9 @@ function TimelineMenu() {
       { x: 0, opacity: 1, duration: 1 }
     );
   }, []);
-
+  
   return (
-    <div className="p-40 overflow-hidden lg:flex lg:flex-row lg:justify-around lg:items-center">
+    <div className="lg:p-40 overflow-hidden p-0 lg:flex lg:flex-row lg:justify-around lg:items-center">
       {/* Menu Items */}
       <div className="w-96 h-96 flex flex-col items-start p-4">
         {menuItems.map((item, index) => (
@@ -113,7 +114,7 @@ function TimelineMenu() {
       {/* Details Section */}
       <div
         ref={imageRef}
-        className="w-471 h-611 flex  flex-col justify-center items-center p-10 shadow-lg rounded-[43px]"
+        className="lg:w-471 lg:h-611 flex mt-16 lg:mt-0  flex-col justify-center items-center p-12 shadow-lg rounded-[43px]"
         style={{
           backgroundColor: selectedItem ? selectedItem.color : "#ffffff",
         }}
@@ -132,7 +133,10 @@ function TimelineMenu() {
               // Référence pour l'animation de l'image
               src={selectedItem.imageUrl}
               alt={selectedItem.label}
-              className="mt-4"
+              className="mt-9"
+              style={{
+                width: selectedItem ? selectedItem.imageSize : "auto",
+              }}
             />
           </>
         ) : (
