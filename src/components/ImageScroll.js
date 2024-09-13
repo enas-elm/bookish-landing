@@ -41,7 +41,7 @@ const ImageScroll = () => {
   const imagesList4 = [...images4, ...images4, ...images4, ...images4];
 
   return (
-    <div className="flex flex-col relative">
+    <div className="flex flex-col relative mt-[50px] mb-[50px]">
       {/* Scroll Container Left */}
       <div className="scroll-container relative flex justify-center items-center w-full mb-5 overflow-hidden">
         <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollLeft" ref={scrollRef}>
