@@ -54,7 +54,7 @@ const ImageScroll = () => {
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           Unis
         </span>
       </div>
@@ -71,7 +71,7 @@ const ImageScroll = () => {
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           par
         </span>
       </div>
@@ -88,7 +88,7 @@ const ImageScroll = () => {
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           la
         </span>
       </div>
@@ -105,7 +105,7 @@ const ImageScroll = () => {
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite  p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           passion
         </span>
       </div>
