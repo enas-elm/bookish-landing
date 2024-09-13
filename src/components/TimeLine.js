@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 const menuItems = [
   {
     id: 1,
-    label: "DECOUVERT",
+    label: "DÉCOUVREZ",
     description:
       "Rejoignez une communauté de passionnés qui partagent votre amour pour les livres. Restez connecté avec vos amis et découvrez leurs nouvelles aventures, tout en partageant les vôtres !",
     color: "#FEDF6F",
