@@ -3,9 +3,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CommunitySection from './components/CommunitySection'
 import ImageScroll from './components/ImageScroll'
+import Form from './components/Form'
 import './index.css'
 import TimelineMenu from './components/TimeLine'
-import Form from './components/Form'
 
 function App() {
   return (
