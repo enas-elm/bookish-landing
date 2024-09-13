@@ -106,7 +106,7 @@ function TimelineMenu() {
             )}
           </div>
         ))}
-        <button className="bg-yellow shadow-lg text-green px-6 py-2 mt-16 rounded-full hover:bg-yellow-500 hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
+        <button className="bg-yellow shadow-lg text-green px-8 py-4 mt-16 rounded-full text-xl hover:bg-[#F6E96B] hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
           <a href="#form-section">Devenir testeur</a>
         </button>
       </div>
