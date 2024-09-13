@@ -114,7 +114,7 @@ const CommunitySection = () => {
       </div>
 
       <div className="relative z-10 flex justify-center mt-12 flex-wrap">
-        {['/Book4.png', '/Book2.png', '/Book3.png', '/Book4.png', '/Book1.png'].map((src, index) => (
+        {['/Book5.png', '/Book2.png', '/Book3.png', '/Book4.png', '/Book1.png'].map((src, index) => (
           <div
             key={index}
             className={`relative z-${10 - Math.abs(index - 2)} transform ${
@@ -122,7 +122,7 @@ const CommunitySection = () => {
             } -mr-6 sm:-mr-16 ${index === 0 || index === 4 ? 'hidden sm:block' : ''}`} 
             ref={(el) => (booksRef.current[index] = el)}
           >
-            <img src={src} alt={`Book Cover ${index + 1}`} className="h-40 w-20 sm:h-80 sm:w-60 shadow-lg" />
+            <img src={src} alt={`Book Cover ${index + 1}`} className="h-40 w-20 sm:h-80 sm:w-60" />
           </div>
         ))}
       </div>
