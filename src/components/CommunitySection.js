@@ -106,7 +106,7 @@ const CommunitySection = () => {
   }, [lastScrollY]);
 
   return (
-    <section className="relative bg-green text-yellow min-h-screen w-full py-16 px-8 overflow-hidden">
+    <section className="relative bg-green text-yellow min-h-screen w-full py-16 px-8">
       <div className="relative text-center">
         <p className="text-2xl sm:text-4xl italic mb-2" style={{ fontFamily: 'dm-sans-italic' }}>Rejoignez un club</p>
         <h1 className="text-5xl sm:text-8xl font-bold" style={{ fontFamily: 'dm-display' }}>Trouvez votre</h1>

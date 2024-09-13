@@ -22,7 +22,7 @@ const Footer = () => {
           <p className="text-sm mt-2 text-gris-opacity">+33 633333333</p>
         </div>
 
-        <div className="text-center lg:text-right">
+        <div className="text-center lg:text-left">
           <p className="hidden lg:block text-xl font-semibold">Follow us</p>
           <div className="flex justify-center lg:justify-end mt-4 space-x-4">
             <a href="#" className="text-gris-opacity hover:text-white">

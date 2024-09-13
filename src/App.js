@@ -8,20 +8,18 @@ import TimelineMenu from './components/TimeLine'
 
 function App() {
   return (
-    <div className="App flex flex-col min-h-screen">
-      <header className="header">
+    <div className="App flex flex-col min-h-screen relative">
+      <header className="header z-50">
         <Navbar />
       </header>
 
-      <main className="flex-grow">
-        <div>
-          <CommunitySection/>
-          <TimelineMenu/>
-          <ImageScroll/>
-        </div>
+      <main className="flex-grow relative">
+        <CommunitySection />
+        <TimelineMenu />
+        <ImageScroll />
       </main>
 
-      <footer className="footer">
+      <footer className="footer z-40">
         <Footer />
       </footer>
     </div>
@@ -29,3 +27,4 @@ function App() {
 }
 
 export default App;
+
