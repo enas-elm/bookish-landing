@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
+import React, { useEffect, useRef, useState } from 'react'
+import { gsap } from 'gsap'
 
 const CommunitySection = () => {
-  const booksRef = useRef([]);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const booksRef = useRef([])
+  const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      const currentScrollY = window.scrollY
 
-      const isMobile = window.innerWidth < 640;
+      const isMobile = window.innerWidth < 640
 
       if (currentScrollY > lastScrollY) {
         gsap.to(booksRef.current[0], {
@@ -18,7 +18,7 @@ const CommunitySection = () => {
           rotation: -20,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[1], {
           x: isMobile ? -150 : -400,
@@ -26,7 +26,7 @@ const CommunitySection = () => {
           rotation: -10,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[2], {
           x: 0,
@@ -35,7 +35,7 @@ const CommunitySection = () => {
           scale: isMobile ? 1.1 : 1.2,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[3], {
           x: isMobile ? 150 : 400,
@@ -43,7 +43,7 @@ const CommunitySection = () => {
           rotation: 20,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[4], {
           x: isMobile ? 150 : 400,
@@ -51,7 +51,7 @@ const CommunitySection = () => {
           rotation: 10,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
       } else {
         gsap.to(booksRef.current[0], {
           x: 0,
@@ -59,7 +59,7 @@ const CommunitySection = () => {
           rotation: -15,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[1], {
           x: 0,
@@ -67,7 +67,7 @@ const CommunitySection = () => {
           rotation: -5,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[2], {
           x: 0,
@@ -76,7 +76,7 @@ const CommunitySection = () => {
           rotation: 0,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[3], {
           x: 0,
@@ -84,7 +84,7 @@ const CommunitySection = () => {
           rotation: 5,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
 
         gsap.to(booksRef.current[4], {
           x: 0,
@@ -92,18 +92,18 @@ const CommunitySection = () => {
           rotation: 15,
           duration: 1.5,
           ease: 'power3.out',
-        });
+        })
       }
 
-      setLastScrollY(currentScrollY);
-    };
+      setLastScrollY(currentScrollY)
+    }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY]);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [lastScrollY])
 
   return (
     <section className="relative bg-green text-yellow min-h-screen w-full py-16 px-8">
@@ -127,7 +127,7 @@ const CommunitySection = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default CommunitySection;
+export default CommunitySection

@@ -9,12 +9,12 @@ const Navbar = () => {
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen)
-  };
+  }
 
   const selectLanguage = (lang) => {
     setLanguage(lang)
     setDropdownOpen(false)
-  };
+  }
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen)
@@ -74,9 +74,9 @@ const Navbar = () => {
           )}
         </div>
 
-        <button className="bg-yellow text-green px-6 py-2 rounded-full hover:bg-[#F6E96B]">
+        <a href="#form-section" className="bg-yellow text-green px-6 py-2 rounded-full hover:bg-[#F6E96B]">
           Devenir testeur
-        </button>
+        </a>
       </div>
 
       <div
@@ -124,11 +124,13 @@ const Navbar = () => {
           className="bg-yellow text-green px-6 py-2 rounded-full mt-4 hover:bg-[#F6E96B]"
           onClick={() => setMobileMenuOpen(false)}
         >
+          <a href="#form-section">
           Devenir testeur
+          </a>
         </button>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
