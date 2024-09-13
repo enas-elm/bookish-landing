@@ -4,109 +4,108 @@ const ImageScroll = () => {
   const scrollRef = useRef(null);
 
   const images = [
-
     "lady.png",
     "monsterStein.png",
     "ripe.png",
     "l'odysée.png",
-"trois-mousquetaires.png",
-
+    "trois-mousquetaires.png",
   ];
 
   const images2 = [
-  "allMyFriendAreGhosts.png",
-   "holly.png",
+    "allMyFriendAreGhosts.png",
+    "holly.png",
     "1984.png",
     "petit-prince.png",
     "voyages-extraordianaires.png",
   ];
 
   const images3 = [
-  "sakamoto.png",
-  "SunnyPlaceForShadyPeaple.png",
-   "theSpeaker.png",
-   "theThingWeDoTo.png",
-   "womanLore.png"
-  ]
+    "sakamoto.png",
+    "SunnyPlaceForShadyPeaple.png",
+    "theSpeaker.png",
+    "theThingWeDoTo.png",
+    "womanLore.png",
+  ];
 
   const images4 = [
-      "asterix.png",
-      "le-cid.png",
-      "lotr.png",
-      "op.png",
-      "oliver-twist.png"
+    "asterix.png",
+    "le-cid.png",
+    "lotr.png",
+    "op.png",
+    "oliver-twist.png",
   ];
 
   const imagesList = [...images, ...images, ...images, ...images];
-
   const imagesList2 = [...images2, ...images2, ...images2, ...images2];
-
   const imagesList3 = [...images3, ...images3, ...images3, ...images3];
-
   const imagesList4 = [...images4, ...images4, ...images4, ...images4];
 
   return (
     <div className="flex flex-col relative">
+      {/* Scroll Container Left */}
       <div className="scroll-container relative flex justify-center items-center w-full mb-5 overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap w-max animate-scrollLeft" ref={scrollRef}>
+        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollLeft" ref={scrollRef}>
           {imagesList.map((image, index) => (
             <img
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 z-[1]"
+              className="w-[120px] h-auto  lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white h-full flex justify-center items-center px-4 text-[150px] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           Unis
         </span>
       </div>
 
+      {/* Scroll Container Right */}
       <div className="scroll-container relative flex justify-center items-center w-full mb-5 overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap w-max animate-scrollRight" ref={scrollRef}>
+        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollRight" ref={scrollRef}>
           {imagesList2.map((image, index) => (
             <img
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 z-[1]"
+              className="w-[120px] h-auto mr-8 lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white h-full flex justify-center items-center px-4 text-[150px] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           par
         </span>
       </div>
 
+      {/* Scroll Container Left */}
       <div className="scroll-container relative flex justify-center items-center w-full mb-5 overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap w-max animate-scrollLeft" ref={scrollRef}>
+        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollLeft" ref={scrollRef}>
           {imagesList3.map((image, index) => (
             <img
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 z-[1]"
+              className="w-[120px] h-auto mr-8 lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white h-full flex justify-center items-center px-4 text-[150px] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           la
         </span>
       </div>
 
+      {/* Scroll Container Right */}
       <div className="scroll-container relative flex justify-center items-center w-full overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap w-max animate-scrollRight" ref={scrollRef}>
+        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollRight" ref={scrollRef}>
           {imagesList4.map((image, index) => (
             <img
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 z-[1]"
+              className="w-[120px] h-auto mr-8 lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white h-full flex justify-center items-center px-4 text-[150px] font-inter text-black whitespace-nowrap">
+        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-white p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black whitespace-nowrap">
           passion
         </span>
       </div>
