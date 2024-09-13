@@ -9,24 +9,24 @@ import TimelineMenu from './components/TimeLine'
 
 function App() {
   return (
-    <div className="App flex flex-col min-h-screen relative">
+    <div className="App">
       <header className="header z-50">
         <Navbar />
       </header>
 
-      <main className="flex-grow relative">
+      <main>
         <CommunitySection />
         <TimelineMenu />
         <ImageScroll />
         <Form />
       </main>
 
-      <footer className="footer z-40">
+      <footer>
         <Footer />
       </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 

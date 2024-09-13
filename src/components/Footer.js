@@ -47,7 +47,7 @@ const Footer = () => {
         <p className="text-gris-opacity text-center lg:text-right">© 2024 Ask Phill. All rights reserved.</p>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

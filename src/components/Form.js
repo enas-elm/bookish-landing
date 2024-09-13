@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React from 'react'
 
 const Form = () => {
 
   return (
-    <div className='max-w-5xl mx-auto p-4 py-10 sm:py-28'>
+    <div id="form-section" className='max-w-5xl mx-auto p-4 py-10 sm:py-28'>
 
       <div className='bg-logo py-20 '>
         <div className='flex justify-between gap-16 '>
