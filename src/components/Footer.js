@@ -40,9 +40,8 @@ const Footer = () => {
 
       <div className="border-t border-gray-400 mt-8 pt-4 flex flex-col lg:flex-row justify-between items-center text-xs lg:text-xs">
         <div className="flex space-x-4 mb-4 lg:mb-0">
-          <a href="#" className="text-gris-opacity hover:underline">Privacy Policy</a>
-          <a href="#" className="text-gris-opacity hover:underline">Cookie Policy</a>
-          <a href="#" className="text-gris-opacity hover:underline">Terms & Conditions</a>
+          <a href="/mentions" className="text-gris-opacity hover:underline">Mentions légales</a>
+          <a href="/politiques" className="text-gris-opacity hover:underline">Politiques de confidentialités</a>
         </div>
         <p className="text-gris-opacity text-center lg:text-right">© 2024 Ask Phill. All rights reserved.</p>
       </div>

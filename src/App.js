@@ -1,32 +1,46 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import CommunitySection from './components/CommunitySection'
-import ImageScroll from './components/ImageScroll'
-import Form from './components/Form'
-import './index.css'
-import TimelineMenu from './components/TimeLine'
+import './App.css';
+import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import CommunitySection from './components/CommunitySection';
+import ImageScroll from './components/ImageScroll';
+import Form from './components/Form';
+import Mentions from './components/pages/Mentions';
+import Politiques from './components/pages/Politiques';
+import TimelineMenu from './components/TimeLine';
 
 function App() {
   return (
-    <div className="App">
-      <header className="header z-50">
-        <Navbar />
-      </header>
+    <Router>
+      <div className="App">
+        <header className="header z-50">
+          <Navbar />
+        </header>
 
-      <main>
-        <CommunitySection />
-        <TimelineMenu />
-        <ImageScroll />
-        <Form />
-      </main>
+        <main>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <CommunitySection />
+                <TimelineMenu />
+                <ImageScroll />
+                <Form />
+              </>
+            } />
 
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+            <Route path="/mentions" element={<Mentions />} />
+            <Route path="/politiques" element={<Politiques />} />
+          </Routes>
+        </main>
+
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </Router>
   )
 }
 
-export default App
-
+export default App;
