@@ -114,7 +114,7 @@ const CommunitySection = () => {
       </div>
 
       <div className="relative z-10 flex justify-center mt-12 flex-wrap">
-        {['/Book5.png', '/Book2.png', '/Book3.png', '/Book4.png', '/Book1.png'].map((src, index) => (
+        {['/Book5.png', '/Book3.png', '/Book2.png', '/Book4.png', '/Book1.png'].map((src, index) => (
           <div
             key={index}
             className={`relative z-${10 - Math.abs(index - 2)} transform ${
