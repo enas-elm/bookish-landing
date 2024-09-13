@@ -115,7 +115,19 @@ Pour enrichir notre projet avec des styles et animations avancées, nous intégr
   // Exemple d'animation
   gsap.to('yourElement', { duration: 1, x: 100 });
   ```
+## Déploiement :
 
+- Hébergement statique : Le projet peut être déployé sur Vercel.
+
+1. Build du projet  
+```bash  
+npm run build  
+# ou  
+yarn build  
+```  
+2. Déploiement avec Vercel  
+- Créez un compte sur Vercel et connectez votre dépôt Git.  
+- Vercel détectera automatiquement la configuration et déploiera le site. 
 ## Pour en Savoir plus
 
 Vous pouvez en apprendre davantage dans la [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
