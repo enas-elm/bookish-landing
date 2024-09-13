@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import CommunitySection from './components/CommunitySection'
 import ImageScroll from './components/ImageScroll'
+import Form from './components/Form'
 import './index.css'
 
 function App() {
@@ -14,8 +15,13 @@ function App() {
 
       <main className="flex-grow">
         <div>
-          <CommunitySection/>
-          <ImageScroll/>
+          <CommunitySection />
+          <ImageScroll />
+          <div className="container mx-auto p-4 py-10 sm:py-28 ">
+
+            <Form />
+
+          </div>
         </div>
       </main>
 

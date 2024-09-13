@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,20 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Ending form */
+.label-form {
+  @apply font-dm-display font-semibold text-green text-lg
+}
+
+.input-form {
+  background-color: transparent;
+  @apply  border-b-2 border-green w-full p-1 focus:outline-none focus:border-greenlight 
+}
+
+.bg-logo {
+  background-image: url('../public/images/logo_bookish_green.png');
+  @apply  bg-no-repeat bg-center bg-contain
+}
+/* Ending form END */
