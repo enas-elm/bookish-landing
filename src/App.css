@@ -44,7 +44,7 @@
 /* Containers*/
 
 .container {
-  @apply max-w-5xl mx-auto px-4 sm:px-8
+  @apply max-w-6xl mx-auto px-4 sm:px-8
 }
 /* Containers END */
 
@@ -59,8 +59,12 @@
 /* Titles END */
 
 /* Elements */
+.button-main-big {
+  @apply bg-secondary-100 border-2 border-secondary-100 hover:border-primary-100 text-primary-100 text-xl font-medium px-12 py-2 rounded-full hover:bg-secondary-90 transition-colors
+}
+
 .button-main {
-  @apply bg-secondary-100 text-primary-100  font-medium px-6 py-2 rounded-full hover:bg-secondary-90 transition-colors
+  @apply bg-secondary-100 border-2 border-secondary-100 text-primary-100  font-medium px-6 py-2 rounded-full hover:bg-secondary-90 transition-colors
 }
 
 .button-secondary {
@@ -69,6 +73,10 @@
 
 .button-secondary-alternative {
   @apply py-2 px-4 border-2 font-medium border-primary-100 text-primary-100 rounded-full h-fit transition-colors
+}
+
+.button-secondary-alternative-big {
+  @apply py-2 px-4 border-2 font-medium border-primary-100 text-primary-100 text-xl rounded-full h-fit transition-colors
 }
 /* Elements END */
 
