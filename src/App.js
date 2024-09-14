@@ -1,35 +1,46 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import CommunitySection from './components/CommunitySection'
-import ImageScroll from './components/ImageScroll'
-import Form from './components/Form'
-import './index.css'
+import './App.css';
+import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import CommunitySection from './components/CommunitySection';
+import ImageScroll from './components/ImageScroll';
+import Form from './components/Form';
+import Mentions from './components/pages/Mentions';
+import Politiques from './components/pages/Politiques';
+import TimelineMenu from './components/TimeLine';
 
 function App() {
   return (
-    <div className="App flex flex-col min-h-screen">
-      <header className="header">
-        <Navbar />
-      </header>
+    <Router>
+      <div className="App">
+        <header className="header z-50">
+          <Navbar />
+        </header>
 
-      <main className="flex-grow">
-        <div>
-          <CommunitySection />
-          <ImageScroll />
-          <div className="container mx-auto p-4 py-10 sm:py-28 ">
+        <main>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <CommunitySection />
+                <TimelineMenu />
+                <ImageScroll />
+                <Form />
+              </>
+            } />
 
-            <Form />
+            <Route path="/mentions" element={<Mentions />} />
+            <Route path="/politiques" element={<Politiques />} />
+          </Routes>
+        </main>
 
-          </div>
-        </div>
-      </main>
-
-      <footer className="footer">
-        <Footer />
-      </footer>
-    </div>
-  );
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    </Router>
+  )
 }
 
 export default App;
