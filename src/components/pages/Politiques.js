@@ -3,17 +3,14 @@ import React from "react";
 const Politiques = () => {
   return (
     <>
-      <section className="relative bg-primary-100 text-secondary-100 min-h-screen w-full py-16 px-8 flex items-center justify-center">
-      <div className="text-center">
-      <h1 className="text-5xl sm:text-8xl font-bold mb-4" style={{ fontFamily: "dm-display" }}>
-            Politiques de
-          </h1>
-          <h1 className="text-5xl sm:text-8xl font-bold" style={{ fontFamily: "dm-display" }}>
-            confidentialité
+      <section className="relative bg-primary-100 text-secondary-100 lg:min-h-screen w-full pt-24 pb-16 sm:pt-32 sm:pb-24 px-8 flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="h1-title-dm-display">
+            Politiques de <br></br> confidentialité
           </h1>
         </div>
       </section>
-      <section className="px-8 py-16 md:px-32 md:py-32 text-primary-100">
+      <section className="container py-8 sm:py-16  text-primary-100">
         <div className="space-y-8 text-left">
           <div>
             <h2 className="text-2xl font-semibold mb-2">Mise à jour :</h2>
