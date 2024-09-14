@@ -75,12 +75,22 @@ const Form = () => {
     <div id="form-section" className='max-w-5xl mx-auto p-4 py-10 sm:py-28'>
       <div className='bg-logo py-20 '>
         <div className='flex justify-between gap-16 '>
-          <div className='bg-[#FFF0A3] flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start hidden lg:flex text-green'>
+          <div className='bg-secondary-80 flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start hidden lg:flex text-primary-100'>
             <h2 className='text-7xl font-dm-display font-semibold '>Participez&nbsp;à <br></br>l'aventure</h2>
             <p>© 2024 All Rights Reserved, Bookish Inc.</p>
           </div>
-          <div className='bg-[#FFF0A3] flex flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start w-full text-green'>
+          <div className='bg-secondary-80 flex flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start w-full text-primary-100'>
             <h2 className='text-6xl font-dm-display font-semibold block lg:hidden'>Participez à l'aventure</h2>
+
+            {/* <div className='bg-secondary-80 flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start hidden lg:flex c'>
+            <h2 className='text-7xl font-dm-display font-semibold '>Participez&nbsp;à <br></br>l'aventure</h2>
+            <p>© 2024 All Rights Reserved, Bookish Inc.</p>
+          </div>
+
+          <div className='bg-secondary-80 flex flex-col gap-6 justify-between shadow-lg p-10 rounded-[36px] text-start w-full text-primary-100'>
+
+            <h2 className='text-6xl font-dm-display font-semibold  block lg:hidden'>Participez à l'aventure</h2> */}
+
             <p>Envie de contribuer à l'évolution de Bookish ? Partagez vos retours en testant l'application.</p>
             <form className='flex flex-col sm:flex-row gap-8 items-end' onSubmit={handleSubmit}>
               <div className='flex flex-col gap-2 w-full'>
@@ -139,7 +149,8 @@ const Form = () => {
                   {errors.phone_number && <p className="text-red-500">{errors.phone_number}</p>}
                 </div>
               </div>
-              <button type="submit" className='py-2 px-4 bg-green text-white rounded-full h-fit hover:bg-greenlight transition-colors'>Envoyer</button>
+              <button type="submit" className='py-2 px-4 bg-primary-100 text-white-variant rounded-full h-fit hover:bg-primary-80 transition-colors'>Envoyer</button>
+
             </form>
           </div>
         </div>

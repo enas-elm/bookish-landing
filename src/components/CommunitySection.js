@@ -106,7 +106,7 @@ const CommunitySection = () => {
   }, [lastScrollY])
 
   return (
-    <section className="relative bg-green text-yellow min-h-screen w-full py-16 px-8">
+    <section className="relative bg-primary-100 text-secondary-100 min-h-screen w-full py-16 px-8">
       <div className="relative text-center">
         <p className="text-2xl sm:text-4xl italic mb-2" style={{ fontFamily: 'dm-sans-italic' }}>Rejoignez un club</p>
         <h1 className="text-5xl sm:text-8xl font-bold" style={{ fontFamily: 'dm-display' }}>Trouvez votre</h1>
@@ -117,9 +117,8 @@ const CommunitySection = () => {
         {['/Book5.png', '/Book3.png', '/Book2.png', '/Book4.png', '/Book1.png'].map((src, index) => (
           <div
             key={index}
-            className={`relative z-${10 - Math.abs(index - 2)} transform ${
-              index === 2 ? 'scale-110' : index < 2 ? `rotate-[${-15 + index * 10}deg]` : `rotate-[${index * 10 - 15}deg]`
-            } -mr-6 sm:-mr-16 ${index === 0 || index === 4 ? 'hidden sm:block' : ''}`} 
+            className={`relative z-${10 - Math.abs(index - 2)} transform ${index === 2 ? 'scale-110' : index < 2 ? `rotate-[${-15 + index * 10}deg]` : `rotate-[${index * 10 - 15}deg]`
+              } -mr-6 sm:-mr-16 ${index === 0 || index === 4 ? 'hidden sm:block' : ''}`}
             ref={(el) => (booksRef.current[index] = el)}
           >
             <img src={src} alt={`Book Cover ${index + 1}`} className="h-40 w-20 sm:h-80 sm:w-60" />

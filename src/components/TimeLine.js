@@ -73,23 +73,20 @@ function TimelineMenu() {
             {/* Timeline Item */}
             <div
               onClick={() => handleClick(item)}
-              className={`flex items-center cursor-pointer transition-colors mb-4 ${
-                selectedItem?.id === item.id ? "text-green " : "text-gray-700"
-              }`}
+              className={`flex items-center cursor-pointer transition-colors mb-4 ${selectedItem?.id === item.id ? "text-primary-100 " : "text-gray-variant-700"
+                }`}
             >
               <div
-                className={`w-4 h-4 rounded-full border-2 mr-4 transition-colors ${
-                  selectedItem?.id === item.id
-                    ? "bg-green"
-                    : "bg-gris border-gris"
-                }`}
+                className={`w-4 h-4 rounded-full border-2 mr-4 transition-colors ${selectedItem?.id === item.id
+                    ? "bg-primary-100"
+                    : "bg-gray-variant-90 border-gray-variant-90"
+                  }`}
               ></div>
               <span
-                className={`transition-transform duration-300 text-3xl ${
-                  selectedItem?.id === item.id
+                className={`transition-transform duration-300 text-3xl ${selectedItem?.id === item.id
                     ? "text-5xl font-bold "
                     : "text-base text-noirClair text-4xl"
-                }`}
+                  }`}
               >
                 {item.label}
               </span>
@@ -97,16 +94,15 @@ function TimelineMenu() {
             {/* Vertical Line */}
             {index < menuItems.length - 1 && (
               <div
-                className={`h-12 bg-gris -mt-4 border-gris border-l-2 ml-2 transition-colors ${
-                  selectedItem?.id === item.id
+                className={`h-12 bg-gray-variant-90 -mt-4 border-gray-variant-90 border-l-2 ml-2 transition-colors ${selectedItem?.id === item.id
                     ? "border-blue-500"
-                    : "border-gray-400"
-                }`}
+                    : "border-gray-variant-400"
+                  }`}
               ></div>
             )}
           </div>
         ))}
-        <button className="bg-yellow shadow-lg text-green px-8 py-4 mt-16 rounded-full text-xl hover:bg-[#F6E96B] hover:scale-105 hover:shadow-lg transition transform duration-300 ease-in-out">
+        <button className="button-main mt-16">
           <a href="#form-section">Devenir testeur</a>
         </button>
       </div>
