@@ -3,17 +3,6 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     colors: {
-      // green: "#2D4D43",
-      // greenlight: "#8EBDAF",
-      // white: "#FAFAFA",
-      // "gris-opacity": "#FAF8F799",
-      // beige: "#D8CCB5",
-      // black: "#131313",
-      // gris: "#E4E0DE",
-      // "gris-foncé": "#1B1E28",
-      // yellow: "#FEDF6F",
-      // pureWhite: 'rgb(255,255,255)'
-      
       "primary": {
         100: "#2D4D43",
         80: "#8EBDAF",
@@ -27,7 +16,7 @@ module.exports = {
       "pureWhite": "#FFFFFF",
       "beige-variant": "#D8CCB5",
       "black-variant": "#131313",
-      "gray": {
+      "gray-variant": {
         100: "#1B1E28",
         90: "#E4E0DE",
         80: "#FAF8F799",

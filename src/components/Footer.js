@@ -12,38 +12,38 @@ const Footer = () => {
 
           <div className="text-center lg:text-left lg:pl-5">
             <p className="text-2xl lg:text-3xl font-semibold">Bookish</p>
-            <p className="text-xs lg:text-sm text-gray-80">La librairie des passionnés de lecture</p>
+            <p className="text-xs lg:text-sm text-gray-variant-80">La librairie des passionnés de lecture</p>
           </div>
         </div>
 
         <div className="text-center lg:text-left">
           <p className="text-xl font-semibold">Contact</p>
-          <a href="mailto:contact@booking.fr" className="text-sm mt-2 text-gray-80 hover:underline block">contact@booking.fr</a>
-          <p className="text-sm mt-2 text-gray-80">+33 633333333</p>
+          <a href="mailto:contact@booking.fr" className="text-sm mt-2 text-gray-variant-80 hover:underline block">contact@booking.fr</a>
+          <p className="text-sm mt-2 text-gray-variant-80">+33 633333333</p>
         </div>
 
         <div className="text-center lg:text-left">
           <p className="hidden lg:block text-xl font-semibold">Follow us</p>
           <div className="flex justify-center lg:justify-end mt-4 space-x-4">
-            <a href="#" className="text-gray-80 hover:text-white-variant">
+            <a href="#" className="text-gray-variant-80 hover:text-white-variant">
               <FontAwesomeIcon icon={faInstagram} size="xl" />
             </a>
-            <a href="#" className="text-gray-80 hover:text-white-variant">
+            <a href="#" className="text-gray-variant-80 hover:text-white-variant">
               <FontAwesomeIcon icon={faLinkedin} size="xl" />
             </a>
-            <a href="#" className="text-gray-80 hover:text-white-variant">
+            <a href="#" className="text-gray-variant-80 hover:text-white-variant">
               <FontAwesomeIcon icon={faFacebook} size="xl" />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-gray-400 mt-8 pt-4 flex flex-col lg:flex-row justify-between items-center text-xs lg:text-xs">
+      <div className="border-t border-gray-variant-400 mt-8 pt-4 flex flex-col lg:flex-row justify-between items-center text-xs lg:text-xs">
         <div className="flex space-x-4 mb-4 lg:mb-0">
-          <a href="/mentions" className="text-gray-80 hover:underline">Mentions légales</a>
-          <a href="/politiques" className="text-gray-80 hover:underline">Politiques de confidentialités</a>
+          <a href="/mentions" className="text-gray-variant-80 hover:underline">Mentions légales</a>
+          <a href="/politiques" className="text-gray-variant-80 hover:underline">Politiques de confidentialités</a>
         </div>
-        <p className="text-gray-80 text-center lg:text-right">© 2024 Ask Phill. All rights reserved.</p>
+        <p className="text-gray-variant-80 text-center lg:text-right">© 2024 Ask Phill. All rights reserved.</p>
       </div>
     </footer>
   )

@@ -64,16 +64,16 @@ const Navbar = () => {
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 py-2 w-32 bg-white-variant text-black-variant rounded-md shadow-lg z-10">
               <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-90 ${
-                  language === "EN" ? "bg-gray-90" : ""
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
+                  language === "EN" ? "bg-gray-variant-90" : ""
                 }`}
                 onClick={() => selectLanguage("EN")}
               >
                 EN
               </button>
               <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-90 ${
-                  language === "FR" ? "bg-gray-90" : ""
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
+                  language === "FR" ? "bg-gray-variant-90" : ""
                 }`}
                 onClick={() => selectLanguage("FR")}
               >
@@ -120,16 +120,16 @@ const Navbar = () => {
           {dropdownOpen && (
             <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 py-2 w-32 bg-white-variant text-black-variant rounded-md shadow-lg z-10">
               <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-90 ${
-                  language === "EN" ? "bg-gray-90" : ""
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
+                  language === "EN" ? "bg-gray-variant-90" : ""
                 }`}
                 onClick={() => selectLanguage("EN")}
               >
                 EN
               </button>
               <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-90 ${
-                  language === "FR" ? "bg-gray-90" : ""
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
+                  language === "FR" ? "bg-gray-variant-90" : ""
                 }`}
                 onClick={() => selectLanguage("FR")}
               >
