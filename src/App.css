@@ -41,19 +41,25 @@
   }
 }
 
+/* Elements */
+.button-main {
+  @apply bg-secondary-100 text-primary-100  font-medium px-6 py-2 rounded-full hover:bg-secondary-90 transition-colors
+}
+/* Elements END */
+
 
 /* Ending form */
 .label-form {
-  @apply font-dm-display font-semibold text-green text-lg
+  @apply font-dm-display font-semibold text-primary-100 text-lg
 }
 
 .input-form {
   background-color: transparent;
-  @apply  border-b-2 border-green w-full p-1 focus:outline-none focus:border-greenlight 
+  @apply  border-b-2 border-primary-100 w-full p-1 focus:outline-none focus:border-primary-80 
 }
 
 .bg-logo {
-  background-image: url('../public/images/logo_bookish_green.png');
+  background-image: url('../public/image/logo_bookish_green.png');
   @apply  bg-no-repeat bg-center bg-contain
 }
 /* Ending form END */

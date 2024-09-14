@@ -3,7 +3,7 @@ import React from "react";
 const Mentions = () => {
   return (
     <>
-      <section className="relative bg-green text-yellow min-h-screen w-full py-16 px-8 flex items-center justify-center">
+      <section className="relative bg-primary-100 text-secondary-100 min-h-screen w-full py-16 px-8 flex items-center justify-center">
   <div className="text-center">
     <h1 className="text-5xl sm:text-8xl font-bold mb-4" style={{ fontFamily: "dm-display" }}>
       Mentions
@@ -13,7 +13,7 @@ const Mentions = () => {
     </h1>
   </div>
 </section>
-<section className="px-8 py-16 md:px-32 md:py-32 text-[#1C471F]">
+<section className="px-8 py-16 md:px-32 md:py-32 text-primary-100">
   <div className="space-y-8 text-left">
     <div>
       <h2 className="text-2xl font-bold mb-2">1. Éditeur du site</h2>
