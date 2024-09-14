@@ -9,6 +9,7 @@ const ImageScroll = () => {
     "ripe.png",
     "l'odysée.png",
     "trois-mousquetaires.png",
+    "seuls.jpg",
   ];
 
   const images2 = [
@@ -17,6 +18,7 @@ const ImageScroll = () => {
     "1984.png",
     "petit-prince.png",
     "voyages-extraordianaires.png",
+    "en_attendant_Bojangles.png",
   ];
 
   const images3 = [
@@ -25,6 +27,7 @@ const ImageScroll = () => {
     "theSpeaker.png",
     "theThingWeDoTo.png",
     "womanLore.png",
+    "la-vie-devant-soi.jpg",
   ];
 
   const images4 = [
@@ -33,6 +36,7 @@ const ImageScroll = () => {
     "lotr.png",
     "op.png",
     "oliver-twist.png",
+    "l-alchimiste.jpg",
   ];
 
   const imagesList = [...images, ...images, ...images, ...images];
@@ -43,69 +47,69 @@ const ImageScroll = () => {
   return (
     <div className="flex flex-col relative mt-[50px] mb-[50px]">
       {/* Scroll Container Left */}
-      <div className="scroll-container relative flex justify-center items-center w-full mb-5 overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollLeft" ref={scrollRef}>
+      <div className=" scroll-container">
+        <div className="scroll-wrapper animate-scrollLeft" ref={scrollRef}>
           {imagesList.map((image, index) => (
             <img
               key={index}
-              src={`${process.env.PUBLIC_URL}/image/${image}`}
+              src={`${process.env.PUBLIC_URL}/image/scroll-images/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto  lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className="text-overflow">
           Unis
         </span>
       </div>
 
       {/* Scroll Container Right */}
-      <div className="scroll-container relative flex justify-center items-center w-full mb-5 overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollRight" ref={scrollRef}>
+      <div className=" scroll-container">
+        <div className="scroll-wrapper animate-scrollRight" ref={scrollRef}>
           {imagesList2.map((image, index) => (
             <img
               key={index}
-              src={`${process.env.PUBLIC_URL}/image/${image}`}
+              src={`${process.env.PUBLIC_URL}/image/scroll-images/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className="text-overflow left-[70%] ">
           par
         </span>
       </div>
 
       {/* Scroll Container Left */}
-      <div className="scroll-container relative flex justify-center items-center w-full mb-5 overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollLeft" ref={scrollRef}>
+      <div className=" scroll-container">
+        <div className="scroll-wrapper animate-scrollLeft" ref={scrollRef}>
           {imagesList3.map((image, index) => (
             <img
               key={index}
-              src={`${process.env.PUBLIC_URL}/image/${image}`}
+              src={`${process.env.PUBLIC_URL}/image/scroll-images/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className="text-overflow left-[20%]">
           la
         </span>
       </div>
 
       {/* Scroll Container Right */}
-      <div className="scroll-container relative flex justify-center items-center w-full overflow-hidden">
-        <div className="scroll-wrapper flex whitespace-nowrap sm:h-auto h-[80px] animate-scrollRight" ref={scrollRef}>
+      <div className="scroll-container">
+        <div className="scroll-wrapper animate-scrollRight" ref={scrollRef}>
           {imagesList4.map((image, index) => (
             <img
               key={index}
-              src={`${process.env.PUBLIC_URL}/image/${image}`}
+              src={`${process.env.PUBLIC_URL}/image/scroll-images/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite  p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className=" text-overflow left-[70%]">
           passion
         </span>
       </div>
