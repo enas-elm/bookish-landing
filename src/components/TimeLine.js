@@ -7,9 +7,9 @@ const menuItems = [
     label: "DÉCOUVREZ",
     description:
       "Rejoignez une communauté de passionnés qui partagent votre amour pour les livres. Restez connecté avec vos amis et découvrez leurs nouvelles aventures, tout en partageant les vôtres !",
-    color: "#FEDF6F",
+    color: "#ba512b",
     imageUrl: "/decouvrez.svg",
-    colorText: "#1C471F",
+    colorText: "#FFFFFF",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const menuItems = [
       "Partagez vos listes de lecture avec une communauté de lecteurs tout aussi curieux que vous. Donnez votre avis sur les livres qui vous ont marqué ou déçu, et inspirez les autres à découvrir de nouvelles histoires.",
     color: "#FEDF6F",
     imageUrl: "/Screenshot-1.png",
-    colorText: "#1C471F",
+    colorText: "#26272b",
   },
   {
     id: 4,
@@ -65,27 +65,27 @@ function TimelineMenu() {
   }, []);
 
   return (
-    <div id="time-line" className="lg:p-40 overflow-hidden p-10  lg:flex lg:flex-row lg:justify-around lg:items-center">
+    <div id="time-line" className="container py-10 overflow-hidden sm:pt-24 md:pt-32 lg:gap-32 lg:py-40 lg:flex lg:flex-row lg:justify-between lg:items-center">
       {/* Menu Items */}
-      <div className="w-96 h-96 flex flex-col items-start p-4">
+      <div className="grid grid-cols-2 grid-rows-2 gap-y-2 md:flex justify-between lg:flex-col items-start p-4">
         {menuItems.map((item, index) => (
-          <div key={item.id} className="flex flex-col items-start">
+
+          <div key={item.id} className="flex flex-col items-center lg:items-start">
             {/* Timeline Item */}
             <div
               onClick={() => handleClick(item)}
-              className={`flex items-center cursor-pointer transition-colors mb-4 ${selectedItem?.id === item.id ? "text-primary-100 " : "text-gray-variant-700"
-                }`}
-            >
+              className={`group flex items-center cursor-pointer transition-colors lg:mb-6   ${selectedItem?.id === item.id ? "text-primary-100 " : "text-gray-variant-700"
+                }`}>
               <div
-                className={`w-4 h-4 rounded-full border-2 mr-4 transition-colors ${selectedItem?.id === item.id
-                  ? "bg-primary-100"
-                  : "bg-gray-variant-90 border-gray-variant-90"
+                className={`hidden lg:block mr-4 w-4 h-4 rounded-full  transition-colors ${selectedItem?.id === item.id
+                  ? "bg-primary-100 "
+                  : "bg-gray-variant-60  group-hover:bg-primary-80"
                   }`}
               ></div>
               <span
-                className={`transition-transform duration-300 text-3xl ${selectedItem?.id === item.id
-                  ? "text-5xl font-bold "
-                  : "text-base text-noirClair text-4xl"
+                className={`transition-transform duration-300 text-xl sm:text-3xl font-inter ${selectedItem?.id === item.id
+                  ? "lg:text-5xl font-extrabold "
+                  : " text-gray-variant-60 lg:text-3xl group-hover:text-primary-80 "
                   }`}
               >
                 {item.label}
@@ -94,51 +94,50 @@ function TimelineMenu() {
             {/* Vertical Line */}
             {index < menuItems.length - 1 && (
               <div
-                className={`h-12 bg-gray-variant-90 -mt-4 border-gray-variant-90 border-l-2 ml-2 transition-colors ${selectedItem?.id === item.id
-                  ? "border-blue-500"
-                  : "border-gray-variant-400"
-                  }`}
-              ></div>
+                className="hidden lg:block h-10 bg-gray-variant-60 -mt-4 border-gray-variant-60 border-l-2 ml-2 transition-colors"></div>
             )}
           </div>
+
         ))}
-        <button className="button-main mt-16">
-          <a href="#form-section">Devenir testeur</a>
-        </button>
+        <a href="#form-section" className="hidden lg:block button-main-big  lg:mt-16">Devenir testeur</a>
       </div>
 
       {/* Details Section */}
       <div
         ref={imageRef}
-        className="lg:w-471 lg:h-611 flex mt-16 lg:mt-0  flex-col justify-center items-center p-12 shadow-lg rounded-[43px]"
+        className=" flex flex-col p-6 sm:p-10 shadow-lg rounded-[36px]"
         style={{
           backgroundColor: selectedItem ? selectedItem.color : "#ffffff",
+          color: selectedItem ? selectedItem.colorText : "#ffffff"
         }}
       >
         {selectedItem ? (
           <>
+            <p className="block lg:hidden text-left w-fit font-inter text-sm px-6 rounded-full border border-black opacity-60 mb-2" style={{
+              borderColor: selectedItem ? selectedItem.colorText : "#ffffff"
+            }}>
+              {selectedItem.label}
+            </p>
             <p
-              className="text-xl text-left"
+              className="text-base text-left w-full lg:w-auto"
               style={{
                 color: selectedItem ? selectedItem.colorText : "#ffffff",
-              }}
-            >
+              }}>
               {selectedItem.description}
             </p>
             <img
               // Référence pour l'animation de l'image
               src={selectedItem.imageUrl}
               alt={selectedItem.label}
-              className="mt-9"
-              style={{
-                width: selectedItem ? selectedItem.imageSize : "auto",
-              }}
+              className="mt-9 h-72 mx-auto w-fit"
             />
           </>
         ) : (
           <p>Bonjour</p>
         )}
       </div>
+      <a href="#form-section" className="block lg:hidden w-fit mx-auto button-main-big  mt-4 ">Devenir testeur</a>
+
     </div>
   );
 }
