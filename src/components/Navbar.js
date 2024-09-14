@@ -1,5 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FiX, FiAlignJustify } from "react-icons/fi"
+import { HiMenu, HiX } from "react-icons/hi";
+
+
 
 const Navbar = () => {
   const [language, setLanguage] = useState("FR");
@@ -43,9 +47,8 @@ const Navbar = () => {
       <div className="sm:hidden">
         <button
           onClick={toggleMobileMenu}
-          className="text-secondary-100 focus:outline-none"
-        >
-          {mobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+          className="text-secondary-100 focus:outline-none">
+          <HiMenu size={24} />
         </button>
       </div>
 
@@ -55,28 +58,22 @@ const Navbar = () => {
         </a>
         <div className="relative" ref={dropdownRef}>
           <button
-            className="bg-transparent text-secondary-100 px-3 py-1 focus:outline-none flex items-center gap-1"
-            onClick={toggleDropdown}
-          >
+            className="bg-transparent text-secondary-100 px-3 py-1 focus:outline-none flex items-center gap-1">
             {language} <span className="text-xs">▼</span>
           </button>
 
           {dropdownOpen && (
             <div className="absolute right-0 mt-2 py-2 w-32 bg-white-variant text-black-variant rounded-md shadow-lg z-10">
               <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
-                  language === "EN" ? "bg-gray-variant-90" : ""
-                }`}
-                onClick={() => selectLanguage("EN")}
-              >
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${language === "EN" ? "bg-gray-variant-90" : ""
+                  }`}
+                onClick={() => selectLanguage("EN")}>
                 EN
               </button>
               <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
-                  language === "FR" ? "bg-gray-variant-90" : ""
-                }`}
-                onClick={() => selectLanguage("FR")}
-              >
+                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${language === "FR" ? "bg-gray-variant-90" : ""
+                  }`}
+                onClick={() => selectLanguage("FR")}>
                 FR
               </button>
             </div>
@@ -85,67 +82,67 @@ const Navbar = () => {
 
         <a
           href="#form-section"
-          className="button-main"
-        >
+          className="button-main">
           Devenir testeur
         </a>
       </div>
 
+      {/* Menu Mobile */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-primary-100 text-center py-8 z-40 transform transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+        className={`fixed top-0 right-0 h-full w-64 shadow-lg bg-secondary-80 text-center py-8 z-40 transform transition-transform duration-300 ease-in-out ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}>
         <button
           onClick={toggleMobileMenu}
-          className="absolute top-4 right-4 text-secondary-100 focus:outline-none"
-        >
-          <FaTimes size={24} />
+          className="absolute top-4 right-4 text-black focus:outline-none">
+          <HiX size={24} />
         </button>
-        <a
-          href="/about"
-          className="block py-4 px-5 text-secondary-100 text-left hover:underline"
-          onClick={() => setMobileMenuOpen(false)}
-        >
-          À propos
-        </a>
-        <div className="relative mt-4" ref={dropdownRef}>
-          <button
-            className="bg-transparent text-secondary-100 px-5 py-1 focus:outline-none flex items-center justify-center gap-1"
-            onClick={toggleDropdown}
+
+        <div className=" flex flex-col gap-4 mt-5 mx-5">
+          <a
+            href="/about"
+            className="block text-black text-left hover:underline"
+            onClick={() => setMobileMenuOpen(false)}
           >
-            {language} <span className="text-xs">▼</span>
+            À propos
+          </a>
+          <div className="relative" ref={dropdownRef}>
+            <button
+              className="bg-transparent text-black focus:outline-none flex items-center justify-center gap-1"
+              onClick={toggleDropdown}
+            >
+              {language} <span className="text-xs">▼</span>
+            </button>
+
+            {dropdownOpen && (
+              <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 py-2 w-32 bg-white-variant text-black-variant rounded-md shadow-lg z-10">
+                <button
+                  className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${language === "EN" ? "bg-gray-variant-90" : ""
+                    }`}
+                  onClick={() => selectLanguage("EN")}
+                >
+                  EN
+                </button>
+                <button
+                  className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${language === "FR" ? "bg-gray-variant-90" : ""
+                    }`}
+                  onClick={() => selectLanguage("FR")}
+                >
+                  FR
+                </button>
+              </div>
+            )}
+          </div>
+
+          <button
+            className="button-secondary-alternative"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            <a href="#form-section">Devenir testeur</a>
           </button>
-
-          {dropdownOpen && (
-            <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 py-2 w-32 bg-white-variant text-black-variant rounded-md shadow-lg z-10">
-              <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
-                  language === "EN" ? "bg-gray-variant-90" : ""
-                }`}
-                onClick={() => selectLanguage("EN")}
-              >
-                EN
-              </button>
-              <button
-                className={`block w-full text-left px-4 py-2 hover:bg-gray-variant-90 ${
-                  language === "FR" ? "bg-gray-variant-90" : ""
-                }`}
-                onClick={() => selectLanguage("FR")}
-              >
-                FR
-              </button>
-            </div>
-          )}
         </div>
-
-        <button
-          className="button-main"
-          onClick={() => setMobileMenuOpen(false)}
-        >
-          <a href="#form-section">Devenir testeur</a>
-        </button>
       </div>
+      {/* Menu Mobile END*/}
+
     </nav>
   );
 };

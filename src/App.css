@@ -41,9 +41,34 @@
   }
 }
 
+/* Containers*/
+
+.container {
+  @apply max-w-5xl mx-auto px-4 sm:px-8
+}
+/* Containers END */
+
+/* Titles */
+.h1-title-dm-display {
+  @apply text-4xl sm:text-7xl  font-bold font-dm-display
+}
+
+.h2-title-dm-display {
+  @apply text-4xl sm:text-6xl font-semibold font-dm-display 
+}
+/* Titles END */
+
 /* Elements */
 .button-main {
   @apply bg-secondary-100 text-primary-100  font-medium px-6 py-2 rounded-full hover:bg-secondary-90 transition-colors
+}
+
+.button-secondary {
+  @apply py-2 px-4 bg-primary-100 text-white-variant rounded-full h-fit hover:bg-primary-80 transition-colors
+}
+
+.button-secondary-alternative {
+  @apply py-2 px-4 border-2 font-medium border-primary-100 text-primary-100 rounded-full h-fit transition-colors
 }
 /* Elements END */
 
@@ -63,3 +88,30 @@
   @apply  bg-no-repeat bg-center bg-contain
 }
 /* Ending form END */
+
+/* ImageScroll */
+.text-overflow {
+  @apply absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[4rem] sm:text-[4rem] md:text-[6rem] lg:text-[9rem]  font-inter text-black-variant whitespace-nowrap px-10;
+
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 1) 95%,
+    rgba(255, 255, 255, 0)
+  );
+}
+
+
+.img-scroll{
+  @apply  h-auto sm:h-[5rem]  md:h-[7rem] lg:h-[10rem] mr-3 sm:mr-8
+}
+
+.scroll-wrapper{
+  @apply  flex whitespace-nowrap sm:h-auto h-[80px] 
+}
+
+.scroll-container{
+  @apply relative flex justify-center items-center w-full mb-5 overflow-hidden
+}
+/* ImageScroll END */
