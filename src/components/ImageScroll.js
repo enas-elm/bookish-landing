@@ -50,11 +50,11 @@ const ImageScroll = () => {
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto  lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className="text-overlay left-[20%] text-on-img-scroll">
           Unis
         </span>
       </div>
@@ -67,11 +67,11 @@ const ImageScroll = () => {
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className="text-overlay left-[70%] text-on-img-scroll">
           par
         </span>
       </div>
@@ -84,11 +84,11 @@ const ImageScroll = () => {
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto mr-8 lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[20%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className="text-overlay left-[20%] text-on-img-scroll">
           la
         </span>
       </div>
@@ -101,11 +101,11 @@ const ImageScroll = () => {
               key={index}
               src={`${process.env.PUBLIC_URL}/image/${image}`}
               alt={`Scroll ${index}`}
-              className="w-[120px] h-auto lg:w-[120px] lg:mr-8 md:w-[100px] md:mr-6 sm:w-[60px] mr-3 sm:mr-8"
+              className="img-scroll"
             />
           ))}
         </div>
-        <span className="text-overlay absolute top-1/2 left-[70%] transform -translate-x-1/2 -translate-y-1/2 z-10 bg-pureWhite  p-4 text-[3rem] lg:text-[9rem] md:text-[2rem] sm:text-[1.25rem] font-inter text-black-variant whitespace-nowrap">
+        <span className="text-overlay left-[70%] text-on-img-scroll">
           passion
         </span>
       </div>
