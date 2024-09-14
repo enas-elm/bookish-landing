@@ -102,7 +102,7 @@ const Navbar = () => {
 
         <div className="flex flex-col gap-4 mt-5 mx-5">
           <a
-            href="/about"
+            href="#time-line"
             className="block text-black text-left hover:underline"
             onClick={() => setMobileMenuOpen(false)}
           >
