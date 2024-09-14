@@ -67,7 +67,7 @@ function TimelineMenu() {
   return (
     <div id="time-line" className="container py-10 overflow-hidden sm:pt-24 md:pt-32 lg:gap-32 lg:py-40 lg:flex lg:flex-row lg:justify-between lg:items-center">
       {/* Menu Items */}
-      <div className="grid grid-cols-2 grid-rows-2 gap-y-2 md:flex justify-between lg:flex-col items-start p-4">
+      <div className="grid grid-cols-2 grid-rows-2 gap-y-2 sm:gap-y-4 md:flex justify-between lg:flex-col items-start p-4 pb-8">
         {menuItems.map((item, index) => (
 
           <div key={item.id} className="flex flex-col items-center lg:items-start">
@@ -136,7 +136,7 @@ function TimelineMenu() {
           <p>Bonjour</p>
         )}
       </div>
-      <a href="#form-section" className="block lg:hidden w-fit mx-auto button-main-big  mt-4 ">Devenir testeur</a>
+      <a href="#form-section" className="block lg:hidden w-fit mx-auto button-main-big  p-4 mt-8">Devenir testeur</a>
 
     </div>
   );
