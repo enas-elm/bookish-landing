@@ -11,15 +11,17 @@ import Form from './components/Form';
 import Mentions from './components/pages/Mentions';
 import Politiques from './components/pages/Politiques';
 import TimelineMenu from './components/TimeLine';
+import { HelmetProvider } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 function App() {
   return (
+    <HelmetProvider>
     <Router>
       <div className="App">
         <header className="header z-50">
           <Navbar />
         </header>
-
         <main>
           <Routes>
             <Route path="/" element={
@@ -42,6 +44,7 @@ function App() {
         <Analytics />
       </div>
     </Router>
+    </HelmetProvider>
   )
 }
 
