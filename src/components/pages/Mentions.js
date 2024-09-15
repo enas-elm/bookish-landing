@@ -1,8 +1,14 @@
 import React from "react";
+import { Helmet } from 'react-helmet-async';
 
 const Mentions = () => {
   return (
     <>
+    <Helmet>
+            <title>Mentions légales - Bookish</title>
+            <meta name="description" content="Bienvenue sur les mentions légales de Bookish." />
+            <meta property="og:url" content="https://bookish-landing.vercel.app/mentions"/>
+      </Helmet>
       <section className="relative bg-primary-100 text-secondary-100 lg:min-h-screen w-full pt-24 pb-16 sm:pt-32 sm:pb-24 px-8 flex items-center justify-center">
         <div className="text-center">
           <h1 className="h1-title-dm-display">
