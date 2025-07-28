@@ -47,16 +47,16 @@ const Navbar = () => {
       <div className="sm:hidden">
         <button
           onClick={toggleMobileMenu}
-          className="text-secondary-100 focus:outline-none">
+          className="text-white focus:outline-none">
           <HiMenu size={24} />
         </button>
       </div>
 
       <div className="hidden sm:flex items-center gap-5 justify-end space-x-6">
-        <a href="#time-line" className="hover:underline text-secondary-100">
+        <a href="#time-line" className="hover:underline text-white">
           À propos
         </a>
-        <div className="relative" ref={dropdownRef}>
+        {/* <div className="relative" ref={dropdownRef}>
           <button
             className="bg-transparent text-secondary-100 px-3 py-1 focus:outline-none flex items-center gap-1"
             onClick={toggleDropdown}
@@ -80,11 +80,11 @@ const Navbar = () => {
               </button>
             </div>
           )}
-        </div>
+        </div> */}
 
         <a
           href="#form-section"
-          className="button-main">
+          className="button-main bg-white text-primary-100">
           Devenir testeur
         </a>
       </div>

@@ -75,11 +75,11 @@ const Form = () => {
     <div id="form-section" className='container py-10 md:py-14 lg:py-28'>
       <div className='bg-logo md:py-20 '>
         <div className='flex justify-between gap-16 '>
-          <div className='bg-secondary-80 flex-col gap-6 justify-between shadow-lg p-6 sm:p-10 rounded-[36px] text-start hidden lg:flex text-primary-100'>
+          <div className='bg-[#F1CEC1] flex-col gap-6 justify-between shadow-lg p-6 sm:p-10 rounded-[36px] text-start hidden lg:flex text-primary-100'>
             <h2 className='h2-title-dm-display '>Participez&nbsp;à <br></br>l'aventure</h2>
-            <p>© 2024 All Rights Reserved, Bookish Inc.</p>
+            <p>© 2025 All Rights Reserved, Bookish Inc.</p>
           </div>
-          <div className='bg-secondary-80 flex flex-col gap-6 justify-between shadow-lg p-6 sm:p-10 rounded-[36px] text-start w-full text-primary-100'>
+          <div className='bg-[#F1CEC1] flex flex-col gap-6 justify-between shadow-lg p-6 sm:p-10 rounded-[36px] text-start w-full text-primary-100'>
             <h2 className='h2-title-dm-display block lg:hidden'>Participez à l'aventure</h2>
 
             <p>Envie de contribuer à l'évolution de Bookish ? Partagez vos retours en testant l'application.</p>

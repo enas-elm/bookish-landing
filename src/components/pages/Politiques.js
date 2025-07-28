@@ -14,7 +14,7 @@ const Politiques = () => {
         <div className="space-y-8 text-left">
           <div>
             <h2 className="text-2xl font-semibold mb-2">Mise à jour :</h2>
-            <p>13/09/2024</p>
+            <p>26/09/2025</p>
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-2">Introduction</h2>
