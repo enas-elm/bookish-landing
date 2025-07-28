@@ -43,7 +43,7 @@ const Footer = () => {
           <a href="/mentions" className="text-gray-variant-60 hover:underline">Mentions légales</a>
           <a href="/politiques" className="text-gray-variant-60 hover:underline">Politiques de confidentialités</a>
         </div>
-        <p className="text-gray-variant-60 text-center lg:text-right">© 2024 All Rights Reserved, Bookish Inc.</p>
+        <p className="text-gray-variant-60 text-center lg:text-right">© 2025 All Rights Reserved, Bookish Inc.</p>
       </div>
     </footer>
   )

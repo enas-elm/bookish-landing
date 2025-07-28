@@ -60,10 +60,14 @@
 
 /* Elements */
 .button-main-big {
-  @apply bg-secondary-100 border-2 border-secondary-100 hover:border-primary-100 text-primary-100 text-xl font-medium px-12 py-2 rounded-full hover:bg-secondary-90 transition-colors
+  @apply bg-primary-100 border-2 border-primary-100 hover:border-primary-100 text-white text-xl  px-12 py-2 rounded-full hover:bg-primary-80 transition-colors
 }
 
 .button-main {
+  @apply bg-white border-2 border-white text-primary-100  font-medium px-6 py-2 rounded-full hover:bg-[#F1CEC1] transition-colors
+}
+
+.button-nav {
   @apply bg-secondary-100 border-2 border-secondary-100 text-primary-100  font-medium px-6 py-2 rounded-full hover:bg-secondary-90 transition-colors
 }
 

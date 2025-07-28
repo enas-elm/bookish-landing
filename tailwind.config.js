@@ -6,13 +6,13 @@ module.exports = {
     extend: {
       colors: {
         "primary": {
-          100: "#2D4D43",
-          80: "#8EBDAF",
+          100: "#2F5046",
+          80: "#6eaa98",
         },
         "secondary": {
-          100: "#FEDF6F",
-          90: "#ffea81",
-          80: "#FFF0A3",
+          100: "#BA512B",
+          90: "#DD8C6E",
+          80: "#E7AD98",
         },
         "white-variant": "#FAFAFA",
         "pureWhite": "#FFFFFF",
